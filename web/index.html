@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAM hogs</title><link rel="stylesheet" href="style.css"></head>
+<body data-token="__TOKEN__">
+<header><h1>RAM hogs</h1><p class="sub">Which apps are using your memory right now. On this computer only, read-only.</p></header>
+<section class="gauge"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="50"/><circle id="arc" class="arc" cx="60" cy="60" r="50"/></svg>
+<div class="gnum"><span id="used">-</span><span class="of">of <span id="total">-</span> GB</span><span id="pct" class="pct">-</span></div></section>
+<p id="top" class="top">Reading memory…</p>
+<ol id="apps" class="apps"></ol>
+<footer>Each app is one line: all its processes added up. Memory shared between processes counts in each, so totals can run a little high. Updates every second.</footer>
+<script src="app.js"></script>
+</body></html>
